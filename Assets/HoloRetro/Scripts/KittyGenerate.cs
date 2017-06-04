@@ -5,20 +5,17 @@ using UnityEngine;
 public class KittyGenerate : MonoBehaviour
 {
     private int _totalTime;
-    private int _totalNum;
     private bool _isStarted;
 
     [SerializeField]
     public GameObject kitty;
     public int interval;
     public int enemyRadius;
-    public int enemyNumLimit;
     public int startTime;
 
     // Use this for initialization
     void Start () {
         _totalTime = 0;
-        _totalNum = 0;
         _isStarted = false;
     }
 
@@ -38,20 +35,9 @@ public class KittyGenerate : MonoBehaviour
 
         if (_totalTime < interval)
             return;
-
-        if (_totalNum >= enemyNumLimit)
-            return;
         
         SpawnBox();
         _totalTime -= interval;
-        _totalNum += 1;
-	    //if (counter > 5)
-	    //{
-	    //    GameObject.Instantiate(kitty);
-	    //    kitty.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 5f;
-	    //    counter = 0;
-	    //}
-
 
 	}
 
