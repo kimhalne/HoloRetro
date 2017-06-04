@@ -76,13 +76,39 @@ public class MovableOtherForceAgent : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
             Attack(other.gameObject);
+
+        if (other.gameObject.tag == "Hole")
+        {
+            print("Hit hole");
+            Kill(other.gameObject);
+        }
     }
 
-    public void Kill()
+    public void Kill(GameObject hole = null)
     {
         print("kill me baby");
+        isGround = false;
         c.enabled = false;
+        rb.useGravity = false;
         m_Agent.enabled = false;
+        StartCoroutine(DeathAnimation(hole));
+    }
+    public IEnumerator DeathAnimation(GameObject hole)
+    {
+        var moveHash = new Hashtable();
+        moveHash.Add("x", hole.transform.position.x);
+        moveHash.Add("z", hole.transform.position.z);
+
+        moveHash.Add("time", 1.5f);
+        iTween.MoveTo(gameObject, moveHash);
+
+        iTween.RotateTo(gameObject, iTween.Hash("y", 5000, "time", 8f));
+
+        while (true)
+        {
+            yield return new WaitForSeconds(3);
+            Destroy(gameObject);
+        }
     }
 
     private void OnLanding()

@@ -11,6 +11,8 @@ public class PlayerAI : MonoBehaviour
     [SerializeField]
     private float range = 25.0f;
     NavMeshAgent a;
+    [SerializeField]
+    GameObject target;
     // Use this for initialization
     void Start()
     {
@@ -32,7 +34,14 @@ public class PlayerAI : MonoBehaviour
             if (a.pathPending || a.remainingDistance > 0.1f)
                 yield return null;
 
-            a.destination = range * Random.insideUnitCircle;
+            if (target)
+            {
+                a.destination = target.transform.position;
+            }
+            else
+            {
+                a.destination = range * Random.insideUnitCircle;
+            }
         }
     }
 }
