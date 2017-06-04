@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class KittyManager : MonoBehaviour {
 
+    public int totalNum;
+    public int total;
 	// Use this for initialization
 	void Start () {
 		

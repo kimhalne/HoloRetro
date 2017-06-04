@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KittyMove : MonoBehaviour {
+public class KittyMoveNumLimmit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -16,19 +16,5 @@ public class KittyMove : MonoBehaviour {
         var distance = heading.magnitude;
         var direction = heading / distance; // This is now the normalized direction.
         gameObject.transform.position += new Vector3(direction.x, 0, direction.z) * Time.deltaTime * 0.5f;
-    }
-
-    // 衝突している間呼ばれ続ける
-    void OnTriggerStay(Collider other)
-    {
-        if (other.tag.Equals("Hole"))
-        {
-            //isHit = true;
-            if (transform.localScale.z < 0)
-            {
-                Destroy(gameObject);
-            }
-            transform.localScale -= Vector3.one * Time.deltaTime * 0.6f;
-        }
-    }
+	    }
 }
