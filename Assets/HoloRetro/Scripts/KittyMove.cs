@@ -15,6 +15,6 @@ public class KittyMove : MonoBehaviour {
         var heading = Camera.main.transform.position - gameObject.transform.position;
         var distance = heading.magnitude;
         var direction = heading / distance; // This is now the normalized direction.
-        gameObject.transform.position += direction * Time.deltaTime * 0.5f;
+        gameObject.transform.position += new Vector3(direction.x, 0, direction.z) * Time.deltaTime * 0.5f;
 	    }
 }
