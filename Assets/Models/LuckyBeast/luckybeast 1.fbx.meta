@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 9e8b484c361af9a449eb02d6c8a4b5a3
+timeCreated: 1498906410
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone
+    100004: Foot.L
+    100006: Foot.R
+    100008: Hips
+    100010: LowerArm.L
+    100012: LowerArm.L.001
+    100014: LowerArm.R
+    100016: LowerArm.R.001
+    100018: LowerLeg.L
+    100020: LowerLeg.R
+    100022: //RootNode
+    100024: Root
+    100026: Root.001
+    100028: Root.002
+    100030: Root.003
+    100032: Root.004
+    100034: Root.005
+    100036: Shoulder.L
+    100038: Shoulder.R
+    100040: SK_lucky.base
+    100042: Toes.L
+    100044: Toes.R
+    100046: UpperArm.L
+    100048: UpperArm.R
+    100050: UpperLeg.L
+    100052: UpperLeg.R
+    400000: Armature
+    400002: Bone
+    400004: Foot.L
+    400006: Foot.R
+    400008: Hips
+    400010: LowerArm.L
+    400012: LowerArm.L.001
+    400014: LowerArm.R
+    400016: LowerArm.R.001
+    400018: LowerLeg.L
+    400020: LowerLeg.R
+    400022: //RootNode
+    400024: Root
+    400026: Root.001
+    400028: Root.002
+    400030: Root.003
+    400032: Root.004
+    400034: Root.005
+    400036: Shoulder.L
+    400038: Shoulder.R
+    400040: SK_lucky.base
+    400042: Toes.L
+    400044: Toes.R
+    400046: UpperArm.L
+    400048: UpperArm.R
+    400050: UpperLeg.L
+    400052: UpperLeg.R
+    4300000: SK_lucky.base
+    7400000: Walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: SK_lucky.base
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/LowerArm.L.001
+        weight: 1
+      - path: Armature/LowerArm.R.001
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Hips
+        weight: 1
+      - path: Armature/Root/Hips/Bone
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.L
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.L/UpperArm.L
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.L/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.R
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.R/UpperArm.R
+        weight: 1
+      - path: Armature/Root/Hips/Bone/Shoulder.R/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/Root/Root.001
+        weight: 1
+      - path: Armature/Root/Root.001/Root.002
+        weight: 1
+      - path: Armature/Root/Root.001/Root.002/Root.003
+        weight: 1
+      - path: Armature/Root/Root.001/Root.002/Root.003/Root.004
+        weight: 1
+      - path: Armature/Root/UpperLeg.L
+        weight: 1
+      - path: Armature/Root/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/Root/UpperLeg.L/LowerLeg.L/Foot.L
+        weight: 1
+      - path: Armature/Root/UpperLeg.R
+        weight: 1
+      - path: Armature/Root/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/Root/UpperLeg.R/LowerLeg.R/Foot.R
+        weight: 1
+      - path: Armature/Root.005
+        weight: 1
+      - path: Armature/Toes.L
+        weight: 1
+      - path: Armature/Toes.R
+        weight: 1
+      - path: SK_lucky.base
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
